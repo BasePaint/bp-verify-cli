@@ -11,23 +11,36 @@ Before you begin, ensure you have the following installed:
 
 ## Installation
 
-1. Clone the repository:
+1. Ensure you have Go installed on your system (version 1.16 or later). You can download it from [https://golang.org/dl/](https://golang.org/dl/)
+
+2. Clone the repository:
 
    ```
    git clone https://github.com/yourusername/bpverify.git
    cd bpverify
    ```
 
-2. Build the CLI tool:
+3. Download the required dependencies:
 
    ```
-   go build -o bpverify main.go
+   go mod download
    ```
 
-3. (Optional) Add the tool to your PATH for easy access:
+4. Build the CLI tool:
+
+   ```
+   go build -o bpverify
+   ```
+
+5. (Optional) Add the tool to your PATH for easy access:
    ```
    sudo mv bpverify /usr/local/bin/
    ```
+
+Note: If you're using Windows, the commands may differ slightly:
+
+- Instead of `sudo mv`, you might add the directory containing `bpverify.exe` to your PATH environment variable.
+- The executable will be named `bpverify.exe`.
 
 ## Usage
 
