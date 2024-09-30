@@ -11,34 +11,9 @@ Before you begin, ensure you have the following installed:
 
 ## Installation
 
-1. Clone the repository:
-
-   ```
-   git clone https://github.com/BasePaint/bpverify-cli.git
-   cd bpverify
-   ```
-
-2. Download the required dependencies:
-
-   ```
-   go mod download
-   ```
-
-3. Build the CLI tool:
-
-   ```
-   go build -o bpverify
-   ```
-
-4. (Optional) Add the tool to your PATH for easy access:
-   ```
-   sudo mv bpverify /usr/local/bin/
-   ```
-
-Note: If you're using Windows, the commands may differ slightly:
-
-- Instead of `sudo mv`, you might add the directory containing `bpverify.exe` to your PATH environment variable.
-- The executable will be named `bpverify.exe`.
+```
+go install github.com/BasePaint/bpverify-cli@latest
+```
 
 ## Usage
 
