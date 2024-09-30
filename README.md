@@ -11,28 +11,26 @@ Before you begin, ensure you have the following installed:
 
 ## Installation
 
-1. Ensure you have Go installed on your system (version 1.16 or later). You can download it from [https://golang.org/dl/](https://golang.org/dl/)
-
-2. Clone the repository:
+1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/bpverify.git
+   git clone https://github.com/BasePaint/bpverify-cli.git
    cd bpverify
    ```
 
-3. Download the required dependencies:
+2. Download the required dependencies:
 
    ```
    go mod download
    ```
 
-4. Build the CLI tool:
+3. Build the CLI tool:
 
    ```
    go build -o bpverify
    ```
 
-5. (Optional) Add the tool to your PATH for easy access:
+4. (Optional) Add the tool to your PATH for easy access:
    ```
    sudo mv bpverify /usr/local/bin/
    ```
