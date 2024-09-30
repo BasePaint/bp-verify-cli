@@ -62,6 +62,9 @@ func GetEvents(rpcUrl string, day int) ([][]byte, error) {
 
 func processLog(vLog types.Log) ([]byte, error) {
     paintEvent := struct{
+        Day *big.Int
+        TokenId *big.Int
+        Author common.Address
         Pixels  []byte
     }{}
     err := abi.GetContractABI().UnpackIntoInterface(&paintEvent, "Painted", vLog.Data)
