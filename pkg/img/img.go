@@ -42,6 +42,11 @@ func CreateImage(rpcURL string, day int, outputPath string) error {
 		return fmt.Errorf("error converting palette: %v", err)
 	}
 
+	// Sets background default to first color in the palette
+	if len(colors) > 0 {
+		draw.Draw(initialCanvas, initialCanvas.Bounds(), &image.Uniform{colors[0]}, image.Point{}, draw.Src)
+	}
+
 	for _, pixels := range pixelsData {
 		applyPixels(initialCanvas, pixels, colors, config.Size)
 	}
